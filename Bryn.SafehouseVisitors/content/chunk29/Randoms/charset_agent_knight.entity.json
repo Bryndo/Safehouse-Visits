@@ -1,0 +1,112 @@
+{
+	"tempHash": "00BED8D54436D118",
+	"tbluHash": "0093E8F82E772ACD",
+	"rootEntity": "cafe3ee69e28d995",
+	"entities": {
+		"cafe3ee69e28d995": {
+			"parent": null,
+			"name": "CHARSET_Knight_F",
+			"factory": "004470A9E6A7722D",
+			"blueprint": "00E21A11EC782D9E",
+			"properties": {
+				"m_aCharacters": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafec9a379c423fa",
+						"cafe0ecf693f26bc",
+						"cafee88489a501ce"
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafec8b11bfe4904": {
+			"parent": "cafe0ecf693f26bc",
+			"name": "Var0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint"
+		},
+		"cafeba83af560b5a": {
+			"parent": "cafec9a379c423fa",
+			"name": "0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/templates/llama/char_snug_unique.template?/outfit_snug_unique_knight_visit_f_actor_v0.entitytemplate].pc_entitytemplate",
+						"flag": "9F"
+					}
+				}
+			}
+		},
+		"cafe43b3f2a8e54d": {
+			"parent": "cafee88489a501ce",
+			"name": "Var0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint"
+		},
+		"cafe0ecf693f26bc": {
+			"parent": "cafe3ee69e28d995",
+			"name": "Nude",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafec8b11bfe4904"]
+				}
+			}
+		},
+		"cafee88489a501ce": {
+			"parent": "cafe3ee69e28d995",
+			"name": "HeroA",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe43b3f2a8e54d"]
+				}
+			}
+		},
+		"cafec9a379c423fa": {
+			"parent": "cafe3ee69e28d995",
+			"name": "Actor",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafeba83af560b5a", "cafe8ee5cd9c2658"]
+				}
+			}
+		},
+		"cafe8ee5cd9c2658": {
+			"parent": "cafec9a379c423fa",
+			"name": "1",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/templates/llama/char_snug_unique.template?/outfit_snug_unique_knight_visit_f_actor_v1.entitytemplate].pc_entitytemplate",
+						"flag": "9F"
+					}
+				}
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

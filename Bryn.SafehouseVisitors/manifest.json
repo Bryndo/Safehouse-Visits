@@ -1,0 +1,173 @@
+{
+    "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
+    "id": "Bryn.SafehouseVisitors",
+    "name": "Safehouse Visitors",
+    "description": "A few NPCs come and visit 47's safehouse",
+    "authors": ["Bryn"],
+    "frameworkVersion": "2.33.25",
+    "version": "0.8.5",
+    "contentFolders": ["content"],
+    "updateCheck": "https://github.com/Bryndo/Safehouse-Visits/releases/download/mod/updates.json",
+    "dependencies": [
+        {
+            "runtimeID": "00A2F4C071DDACDB",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "00A6077F02091F57",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "0011B50CAD446552",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "00CFC2EC7F165758",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "009BFA8B83CF950E",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "008B30DDDB65B75E",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "008F4C656D8B3028",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "0064268836A1408F",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "0093A74B5A693018",
+            "toChunk": 29
+        },
+        {
+            "runtimeID":"00AFC9C81CD7797C",
+            "toChunk": 29
+        },
+        {
+            "runtimeID":"00246568682321B9",
+            "toChunk": 29
+        },
+        {
+            "runtimeID":"0075164448714FBC",
+            "toChunk": 29
+        },
+        {
+            "runtimeID":"00246568682321B9",
+            "toChunk": 29
+        },
+        {
+            "runtimeID":"00246568682321B9",
+            "toChunk": 29
+        },
+        {
+            "runtimeID":"00CC8F8D143BB6E8",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "00B32ED6D3F67BC9",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "0009206555C0EF25",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "00ACDE0386CF8D0D",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "00C5FA02816A7584",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "00C467636232BE02",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "00D45B0D027BF5A6",
+            "toChunk": 29
+        },
+
+         {
+            "runtimeID": "00B24806BE303546",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "00F13E437E680BC8",
+            "toChunk": 29
+        },
+        {
+            "runtimeID": "00DF1F6C7A298A5C",
+            "toChunk": 29
+        },
+        {
+            "runtimeID":"00D9D50D47E737D0",
+            "toChunk":29
+        },
+        {
+            "runtimeID": "00F8E03CEB156C50",
+            "toChunk": 29,
+            "Comment": "dialogue waiter"
+        },
+        {
+            "runtimeID": "00FFFA2BAB6327DE",
+            "toChunk": 29,
+            "Comment": "balloons"
+        },
+        {
+            "runtimeID": "0034A5D2049A7284",
+            "toChunk": 29,
+            "Comment": "Dusting_fr"
+        },
+        {
+            "runtimeID": "005CF182978B7BCA",
+            "toChunk": 29,
+            "Comment": "phone_fr"
+        },
+
+        {
+            "runtimeID": "006892E81B494D88",
+            "toChunk": 29,
+            "Comment": "read tablet_fr"
+        },
+        {
+            "runtimeID": "00D52C27898653B5",
+            "toChunk": 29,
+            "Comment": "just test delete if works"
+        },
+        {
+            "runtimeID": "009C0B1AB4B7C332",
+            "toChunk": 29,
+            "Comment": "yoga_warmup"
+        },
+        {
+            "runtimeID": "002113050801C814",
+            "toChunk": 29,
+            "Comment": "training"
+        },
+        {
+            "runtimeID": "0052646DE8405711",
+            "toChunk": 29,
+            "Comment": "stretch"
+        },
+        {
+            "runtimeID": "005E9E64C1BD1429",
+            "toChunk": 29,
+            "Comment": "step aerobic"
+        },
+        {
+            "runtimeID": "00203D87A8BA52E1",
+            "toChunk": 29,
+            "Comment": "out of breath"
+        }
+
+
+
+    ]
+}

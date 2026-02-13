@@ -1,0 +1,10 @@
+{
+	"tempHash": "00491A81EB0BFD04",
+	"tbluHash": "00DC1CBF23125154",
+	"patch": [
+		{
+			"AddExternalScene": "[assembly:/_pro/scenes/missions/snug/scenario_visitors.brick].pc_entitytype"
+		}
+	],
+	"patchVersion": 6
+}

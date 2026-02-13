@@ -1,0 +1,112 @@
+{
+	"tempHash": "00317EB467B013C3",
+	"tbluHash": "0065520F608A8718",
+	"rootEntity": "cafeb7004196292e",
+	"entities": {
+		"cafeb7004196292e": {
+			"parent": null,
+			"name": "CHARSET_Stone_M",
+			"factory": "004470A9E6A7722D",
+			"blueprint": "00E21A11EC782D9E",
+			"properties": {
+				"m_aCharacters": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafe4ad28705d968",
+						"cafe4681eb162b17",
+						"cafe398b319eb703"
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafee99c71267137": {
+			"parent": "cafe4681eb162b17",
+			"name": "Var0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint"
+		},
+		"cafe4e0ef5c1de69": {
+			"parent": "cafe4ad28705d968",
+			"name": "0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/templates/snug/char_snug_unique.template?/outfit_snug_unique_stone_visit_m_actor_v0.entitytemplate].pc_entitytemplate",
+						"flag": "9F"
+					}
+				}
+			}
+		},
+		"cafeb4c15e51a172": {
+			"parent": "cafe398b319eb703",
+			"name": "Var0",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint"
+		},
+		"cafe4681eb162b17": {
+			"parent": "cafeb7004196292e",
+			"name": "Nude",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafee99c71267137"]
+				}
+			}
+		},
+		"cafe398b319eb703": {
+			"parent": "cafeb7004196292e",
+			"name": "HeroA",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafeb4c15e51a172"]
+				}
+			}
+		},
+		"cafe4ad28705d968": {
+			"parent": "cafeb7004196292e",
+			"name": "Actor",
+			"factory": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe4e0ef5c1de69", "cafe8b07d2e66892"]
+				}
+			}
+		},
+		"cafe8b07d2e66892": {
+			"parent": "cafe4ad28705d968",
+			"name": "1",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/templates/snug/char_snug_unique.template?/outfit_snug_unique_stone_visit_m_actor_v1.entitytemplate].pc_entitytemplate",
+						"flag": "9F"
+					}
+				}
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

@@ -1,0 +1,221 @@
+{
+	"tempHash": "00ABE78364829A12",
+	"tbluHash": "0084E9D02E0F5808",
+	"rootEntity": "cafe0038613a6929",
+	"entities": {
+		"cafecdc4dd7fb0fa": {
+			"parent": "cafe0038613a6929",
+			"name": "Head_DianaBurnwood",
+			"factory": "005DB9813C143CC6",
+			"blueprint": "009CE194C93F3593"
+		},
+		"cafe0038613a6929": {
+			"parent": null,
+			"name": "OUTFIT_Snug_Unique_Diana_F_Actor_v3",
+			"factory": "00AC7D0E02559124",
+			"blueprint": "002F0446D90230BA",
+			"properties": {
+				"m_ResourceID": {
+					"type": "ZRuntimeResourceID",
+					"value": null
+				},
+				"m_fLODScale": { "type": "float32", "value": 1.0 },
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": 1.2177109718322754,
+							"y": -0.8761789798736572,
+							"z": 0.0
+						}
+					}
+				},
+				"m_pBonesAndCollisionResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0097F69B78D93F12",
+						"flag": "5F"
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"m_bUsePerVertexStiffness": {
+					"type": "bool",
+					"value": false
+				},
+				"m_LocalColliders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_bGlobalCollidersEnabled": {
+					"type": "bool",
+					"value": false
+				},
+				"m_fWindConstant": {
+					"type": "float32",
+					"value": 0.10000000149011612
+				},
+				"m_vGravity": {
+					"type": "SVector3",
+					"value": { "x": 0.0, "y": 0.0, "z": -9.81999969482422 }
+				},
+				"m_bUseSkinningNegNormalConstrains": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bUseSkinningPosNormalConstrains": {
+					"type": "bool",
+					"value": false
+				},
+				"m_fDamping": { "type": "float32", "value": 0.5 },
+				"m_bUsePerVertexDamping": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bEnableAngularVelocityScale": {
+					"type": "bool",
+					"value": true
+				},
+				"m_fFrequency": { "type": "float32", "value": 60.0 },
+				"m_nIterations": { "type": "uint32", "value": 2 },
+				"m_fShearStiffness": { "type": "float32", "value": 0.5 },
+				"m_fBendStiffness": { "type": "float32", "value": 0.5 },
+				"m_eStretchConstrainType": {
+					"type": "EClothStretchConstrainType",
+					"value": "eClothBendConstrainType_None"
+				},
+				"m_aBodyParts": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafe16db09bec505",
+						"cafecdc4dd7fb0fa",
+						"cafeee569ac08166",
+						"cafecb224ed5734c",
+						"cafe9ad6efc0cb49",
+						"cafe7b76c8f3234b",
+						"cafe91259358433d",
+						"cafe66b74d1dfdc6",
+						"cafe768182bb352d"
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe16db09bec505": {
+			"parent": "cafe0038613a6929",
+			"name": "Part_Hair",
+			"factory": "[modules:/zbodypartentity.class].pc_entitytype",
+			"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pMeshResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0093A74B5A693018",
+						"flag": "5F"
+					}
+				}
+			}
+		},
+		"cafecb224ed5734c": {
+			"parent": "cafe0038613a6929",
+			"name": "Torso_Neck",
+			"factory": "00873B0AADBCBDE1",
+			"blueprint": "00C2E4D06EA74492"
+		},
+		"cafeee569ac08166": {
+			"parent": "cafe0038613a6929",
+			"name": "Necklace_Pendant_Gem",
+			"factory": "00F0ADCB42F84A81",
+			"blueprint": "00DBE863D42EC865",
+			"properties": {
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#656c9e"
+				},
+				"Diffuse_Hue_Shift_01_Value": {
+					"type": "float32",
+					"value": 0.0
+				}
+			}
+		},
+		"cafe9ad6efc0cb49": {
+			"parent": "cafe0038613a6929",
+			"name": "Shoes_SlipOn_Heeled",
+			"factory": "002E68A0F3636C3D",
+			"blueprint": "00096C8B6FEEC8D1",
+			"properties": {
+				"ConstantVector1D_04_Value": {
+					"type": "float32",
+					"value": 0.4000000059604645
+				},
+				"ConstantVector1D_05_Value": {
+					"type": "float32",
+					"value": 1.0
+				},
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#404040"
+				}
+			}
+		},
+		"cafe7b76c8f3234b": {
+			"parent": "cafe0038613a6929",
+			"name": "Stockings_Thigh_Shoes",
+			"factory": "003826E800322C58",
+			"blueprint": "0047FA61CA2696F5",
+			"properties": {
+				"ConstantVector1D_01_Value": {
+					"type": "float32",
+					"value": 1.0
+				}
+			}
+		},
+		"cafe91259358433d": {
+			"parent": "cafe0038613a6929",
+			"name": "Skirt_Tube_HWaist",
+			"factory": "001E496092438326",
+			"blueprint": "009836E32F2D51A0",
+			"properties": {
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#224f27"
+				},
+				"ConstantVector1D_01_Value": {
+					"type": "float32",
+					"value": 3.0
+				}
+			}
+		},
+		"cafe66b74d1dfdc6": {
+			"parent": "cafe0038613a6929",
+			"name": "Shirt_Dress_1BtnOpen_Tkd",
+			"factory": "00E658E78219CCC8",
+			"blueprint": "00C5B98B7AB7F8D3",
+			"properties": {
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#d1d1d1"
+				}
+			}
+		},
+		"cafe768182bb352d": {
+			"parent": "cafe0038613a6929",
+			"name": "Hands",
+			"factory": "009D3BA31495F26D",
+			"blueprint": "00751323B7335BBE"
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

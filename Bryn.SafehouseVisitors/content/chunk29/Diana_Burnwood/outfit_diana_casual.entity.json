@@ -1,0 +1,190 @@
+{
+	"tempHash": "0080E3B63C9C86EE",
+	"tbluHash": "00317802F97FFC9C",
+	"rootEntity": "cafeef7e17f98f56",
+	"entities": {
+		"cafe630da42bd21c": {
+			"parent": "cafeef7e17f98f56",
+			"name": "Head_DianaBurnwood",
+			"factory": "005DB9813C143CC6",
+			"blueprint": "009CE194C93F3593"
+		},
+		"cafeef7e17f98f56": {
+			"parent": null,
+			"name": "OUTFIT_Llama_Unique_Diana_F_Actor_v0",
+			"factory": "00AC7D0E02559124",
+			"blueprint": "002F0446D90230BA",
+			"properties": {
+				"m_ResourceID": {
+					"type": "ZRuntimeResourceID",
+					"value": null
+				},
+				"m_fLODScale": { "type": "float32", "value": 1.0 },
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": 1.2177109718322754,
+							"y": -0.8761789798736572,
+							"z": 0.0
+						}
+					}
+				},
+				"m_pBonesAndCollisionResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0097F69B78D93F12",
+						"flag": "5F"
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"m_bUsePerVertexStiffness": {
+					"type": "bool",
+					"value": false
+				},
+				"m_LocalColliders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_bGlobalCollidersEnabled": {
+					"type": "bool",
+					"value": false
+				},
+				"m_fWindConstant": {
+					"type": "float32",
+					"value": 0.10000000149011612
+				},
+				"m_vGravity": {
+					"type": "SVector3",
+					"value": { "x": 0.0, "y": 0.0, "z": -9.81999969482422 }
+				},
+				"m_bUseSkinningNegNormalConstrains": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bUseSkinningPosNormalConstrains": {
+					"type": "bool",
+					"value": false
+				},
+				"m_fDamping": { "type": "float32", "value": 0.5 },
+				"m_bUsePerVertexDamping": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bEnableAngularVelocityScale": {
+					"type": "bool",
+					"value": true
+				},
+				"m_fFrequency": { "type": "float32", "value": 60.0 },
+				"m_nIterations": { "type": "uint32", "value": 2 },
+				"m_fShearStiffness": { "type": "float32", "value": 0.5 },
+				"m_fBendStiffness": { "type": "float32", "value": 0.5 },
+				"m_eStretchConstrainType": {
+					"type": "EClothStretchConstrainType",
+					"value": "eClothBendConstrainType_None"
+				},
+				"m_aBodyParts": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafeee791635e5ce",
+						"cafe630da42bd21c",
+						"cafe0c69230f9bf8",
+						"cafe2c49e6ea0ec7",
+						"cafe61fe36444b6d",
+						"cafe5a59eb5107ac",
+						"cafed5f63b576483"
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafeee791635e5ce": {
+			"parent": "cafeef7e17f98f56",
+			"name": "Part_Hair",
+			"factory": "[modules:/zbodypartentity.class].pc_entitytype",
+			"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pMeshResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0093A74B5A693018",
+						"flag": "5F"
+					}
+				}
+			}
+		},
+		"cafe0c69230f9bf8": {
+			"parent": "cafeef7e17f98f56",
+			"name": "Sweater_Turtleneck_Slimfit",
+			"factory": "00B24806BE303546",
+			"blueprint": "008457AE816398BD",
+			"properties": {
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#3a5854"
+				},
+				"m_pMeshResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00B11436730A0CF8",
+						"flag": "5F"
+					}
+				}
+			}
+		},
+		"cafed5f63b576483": {
+			"parent": "cafeef7e17f98f56",
+			"name": "Pants_Jeans_Skinny",
+			"factory": "0046DC9C50B172C9",
+			"blueprint": "004A46244741BA82",
+			"properties": {
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#a5aeb5"
+				},
+				"Diffuse_Saturation_01_Value": {
+					"type": "float32",
+					"value": 0.5
+				}
+			}
+		},
+		"cafe5a59eb5107ac": {
+			"parent": "cafeef7e17f98f56",
+			"name": "Legs_Thigh_Shoes",
+			"factory": "00EC5ADB153CD1EE",
+			"blueprint": "00AAA87E4D624DAD"
+		},
+		"cafe61fe36444b6d": {
+			"parent": "cafeef7e17f98f56",
+			"name": "Shoes_Sneakers_Basketball_Low",
+			"factory": "006F52FA759597C9",
+			"blueprint": "000D6E13DE1B7145",
+			"properties": {
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				}
+			}
+		},
+		"cafe2c49e6ea0ec7": {
+			"parent": "cafeef7e17f98f56",
+			"name": "Hands",
+			"factory": "009D3BA31495F26D",
+			"blueprint": "00751323B7335BBE"
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}
