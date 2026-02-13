@@ -5,7 +5,7 @@
 	"entities": {
 		"fffffffffffffffe": {
 			"parent": null,
-			"name": "Scene",
+			"name": "Scenario_visitors",
 			"factory": "[modules:/zspatialentity.class].pc_entitytype",
 			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint"
 		},
@@ -3059,7 +3059,7 @@
 			}
 		},
 		"cafe7a0184f6fbd8": {
-			"parent": "cafe01d804e8e903",
+			"parent": "cafe78a5b12aed06",
 			"name": "CHAR_Knight_Casual",
 			"factory": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -3457,7 +3457,7 @@
 			"blueprint": "[assembly:/_pro/characters/templates/llama/char_snug_unique.template?/charset_snug_unique_knight_visit_f.entitytemplate].pc_entityblueprint"
 		},
 		"cafe75fe511b4755": {
-			"parent": "cafe01d804e8e903",
+			"parent": "cafebb13252c097b",
 			"name": "CHAR_Stone_Casual",
 			"factory": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -8049,7 +8049,8 @@
 					"value": true
 				},
 				"m_nValue": { "type": "int32", "value": 0 }
-			}
+			},
+			"events": { "OnValue": { "In": ["cafe7b3c46761715"] } }
 		},
 		"cafe7b3c46761715": {
 			"parent": "cafe070f53f4a83c",
@@ -8057,7 +8058,11 @@
 			"factory": "[modules:/zsignalrandomrouteentity_void.class].pc_entitytype",
 			"blueprint": "[modules:/zsignalrandomrouteentity_void.class].pc_entityblueprint",
 			"properties": {
-				"m_nMaxOutPinNum": { "type": "int32", "value": 8 }
+				"m_nMaxOutPinNum": { "type": "int32", "value": 8 },
+				"m_rSeedEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe055dedede9d3"
+				}
 			},
 			"events": {
 				"Out1": {
@@ -8108,18 +8113,6 @@
 			"factory": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
 		},
-		"cafed751a10fb1a9": {
-			"parent": "cafe7aef5eb1b215",
-			"name": "SignalFork_Void",
-			"factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
-			"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
-			"events": {
-				"Out01": {
-					"Enable": ["cafeb976846ee089", "cafef9cfcd3d1243"]
-				},
-				"Out02": { "In": ["cafe7925e10f4172"] }
-			}
-		},
 		"cafe54e54f16d3c5": {
 			"parent": "cafeae6c52a59df7",
 			"name": "Smith",
@@ -8161,7 +8154,8 @@
 					"value": true
 				},
 				"m_nValue": { "type": "int32", "value": 0 }
-			}
+			},
+			"events": { "OnValue": { "In": ["cafe08c3351345fa"] } }
 		},
 		"cafe08c3351345fa": {
 			"parent": "cafe54e54f16d3c5",
@@ -8169,17 +8163,17 @@
 			"factory": "[modules:/zsignalrandomrouteentity_void.class].pc_entitytype",
 			"blueprint": "[modules:/zsignalrandomrouteentity_void.class].pc_entityblueprint",
 			"properties": {
-				"m_nMaxOutPinNum": { "type": "int32", "value": 8 }
+				"m_nMaxOutPinNum": { "type": "int32", "value": 8 },
+				"m_rSeedEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafee4dd9cea8e89"
+				}
 			},
 			"events": {
 				"Out1": {
-					"Enable": ["cafed3f23556dbee"],
+					"Enable": ["cafeeb72e32483de"],
 					"In": ["cafed7c28faaadc8"]
-				},
-				"Out2": { "Enable": ["cafe1c8874f5acbd"] },
-				"Out3": { "Enable": ["cafe71f213f77b75"] },
-				"Out4": { "Enable": ["cafe97410a654bef"] },
-				"Out5": { "Enable": ["cafe613de2dc879f"] }
+				}
 			}
 		},
 		"cafed7c28faaadc8": {
@@ -8223,6 +8217,258 @@
 			"name": "Diana",
 			"factory": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafebb13252c097b": {
+			"parent": "cafe01d804e8e903",
+			"name": "Stone ",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe78a5b12aed06": {
+			"parent": "cafe01d804e8e903",
+			"name": "Knight",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe4891e49854f5": {
+			"parent": "cafeae6c52a59df7",
+			"name": "Stone",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe4323537bef0a": {
+			"parent": "cafe09b469803c0c",
+			"name": "GameplayStart",
+			"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eEvent": {
+					"type": "EGameEventType",
+					"value": "GET_GameplayStart"
+				}
+			},
+			"events": { "EventOccurred": { "Rand": ["cafe09b469803c0c"] } }
+		},
+		"cafe09b469803c0c": {
+			"parent": "cafe4891e49854f5",
+			"name": "RNG_Stone",
+			"factory": "[modules:/zrandentity_int32.class].pc_entitytype",
+			"blueprint": "[modules:/zrandentity_int32.class].pc_entityblueprint",
+			"properties": {
+				"m_nMax": { "type": "int32", "value": 9000000 },
+				"m_nMin": { "type": "int32", "value": 0 }
+			},
+			"events": { "Value": { "SetValue": ["cafe553842c2dc06"] } }
+		},
+		"cafe553842c2dc06": {
+			"parent": "cafe09b469803c0c",
+			"name": "Seed",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bSetValueAlwaysTriggerChangedEvent": {
+					"type": "bool",
+					"value": true
+				},
+				"m_nValue": { "type": "int32", "value": 0 }
+			},
+			"events": { "OnValue": { "In": ["cafeebb4bbf24e31"] } }
+		},
+		"cafeebb4bbf24e31": {
+			"parent": "cafe4891e49854f5",
+			"name": "SignalRandomRoute_Void",
+			"factory": "[modules:/zsignalrandomrouteentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalrandomrouteentity_void.class].pc_entityblueprint",
+			"properties": {
+				"m_nMaxOutPinNum": { "type": "int32", "value": 8 },
+				"m_rSeedEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe553842c2dc06"
+				}
+			},
+			"events": {
+				"Out1": {
+					"Enable": ["cafef9cfcd3d1243"],
+					"In": ["cafe6ec20eb0dfe2"]
+				}
+			}
+		},
+		"cafe6ec20eb0dfe2": {
+			"parent": "cafea1221788c528",
+			"name": "TimerSimple",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": { "type": "int32", "value": 100 }
+			},
+			"events": { "Out": { "Set": ["cafedf2654b94713"] } }
+		},
+		"cafea1221788c528": {
+			"parent": "cafe4891e49854f5",
+			"name": "Timer ",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe7dd5c68a81fe": {
+			"parent": "cafea1221788c528",
+			"name": "SignalFork_Void",
+			"factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+			"events": {
+				"Out01": {
+					"Enable": ["cafeb976846ee089", "cafef9cfcd3d1243"]
+				},
+				"Out02": { "In": ["cafe6ec20eb0dfe2"] }
+			}
+		},
+		"cafe13bb0f47a17f": {
+			"parent": "cafeae6c52a59df7",
+			"name": "Knight",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe6619458b5441": {
+			"parent": "cafe4eb0dbcbc922",
+			"name": "GameplayStart",
+			"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eEvent": {
+					"type": "EGameEventType",
+					"value": "GET_GameplayStart"
+				}
+			},
+			"events": { "EventOccurred": { "Rand": ["cafe4eb0dbcbc922"] } }
+		},
+		"cafe4eb0dbcbc922": {
+			"parent": "cafe13bb0f47a17f",
+			"name": "RNG_Knight",
+			"factory": "[modules:/zrandentity_int32.class].pc_entitytype",
+			"blueprint": "[modules:/zrandentity_int32.class].pc_entityblueprint",
+			"properties": {
+				"m_nMax": { "type": "int32", "value": 9000000 },
+				"m_nMin": { "type": "int32", "value": 0 }
+			},
+			"events": { "Value": { "SetValue": ["cafe6ad15fb8db2f"] } }
+		},
+		"cafe6ad15fb8db2f": {
+			"parent": "cafe4eb0dbcbc922",
+			"name": "Seed",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bSetValueAlwaysTriggerChangedEvent": {
+					"type": "bool",
+					"value": true
+				},
+				"m_nValue": { "type": "int32", "value": 0 }
+			},
+			"events": { "OnValue": { "In": ["cafe82a50ad0e173"] } }
+		},
+		"cafe82a50ad0e173": {
+			"parent": "cafe13bb0f47a17f",
+			"name": "SignalRandomRoute_Void",
+			"factory": "[modules:/zsignalrandomrouteentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalrandomrouteentity_void.class].pc_entityblueprint",
+			"properties": {
+				"m_nMaxOutPinNum": { "type": "int32", "value": 8 },
+				"m_rSeedEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe6ad15fb8db2f"
+				}
+			},
+			"events": {
+				"Out1": {
+					"Enable": ["cafeb976846ee089"],
+					"In": ["cafe29a67f053379"]
+				}
+			}
+		},
+		"cafe29a67f053379": {
+			"parent": "cafe5a3c621f75c5",
+			"name": "TimerSimple",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": { "type": "int32", "value": 100 }
+			},
+			"events": { "Out": { "Set": ["cafe66e7a8c1f4d5"] } }
+		},
+		"cafe5a3c621f75c5": {
+			"parent": "cafe13bb0f47a17f",
+			"name": "Timer ",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe151b5a23ffa7": {
+			"parent": "cafe5a3c621f75c5",
+			"name": "SignalFork_Void",
+			"factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+			"events": {
+				"Out01": {
+					"Enable": ["cafeb976846ee089", "cafef9cfcd3d1243"]
+				},
+				"Out02": { "In": ["cafe29a67f053379"] }
+			}
+		},
+		"cafe6252ce1b0da5": {
+			"parent": "fffffffffffffffe",
+			"name": "2",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafeb4716feecea1": {
+			"parent": "cafedaed9a9595e8",
+			"name": "GameplayStart",
+			"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eEvent": {
+					"type": "EGameEventType",
+					"value": "GET_GameplayStart"
+				}
+			},
+			"events": { "EventOccurred": { "Rand": ["cafedaed9a9595e8"] } }
+		},
+		"cafedaed9a9595e8": {
+			"parent": "cafe6252ce1b0da5",
+			"name": "RNG",
+			"factory": "[modules:/zrandentity_int32.class].pc_entitytype",
+			"blueprint": "[modules:/zrandentity_int32.class].pc_entityblueprint",
+			"properties": {
+				"m_nMax": { "type": "int32", "value": 9000000 },
+				"m_nMin": { "type": "int32", "value": 0 }
+			},
+			"events": { "Value": { "SetValue": ["cafe15a3ddda29f1"] } }
+		},
+		"cafe15a3ddda29f1": {
+			"parent": "cafedaed9a9595e8",
+			"name": "Seed",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bSetValueAlwaysTriggerChangedEvent": {
+					"type": "bool",
+					"value": true
+				},
+				"m_nValue": { "type": "int32", "value": 0 }
+			},
+			"events": { "OnValue": { "In": [] } }
+		},
+		"cafe8adec6e7a681": {
+			"parent": "cafe6252ce1b0da5",
+			"name": "SignalRandomRoute_Void",
+			"factory": "[modules:/zsignalrandomrouteentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalrandomrouteentity_void.class].pc_entityblueprint",
+			"properties": {
+				"m_nMaxOutPinNum": { "type": "int32", "value": 2 },
+				"m_rSeedEntity": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			},
+			"events": { "Out1": {}, "Out2": {} }
 		}
 	},
 	"propertyOverrides": [],
