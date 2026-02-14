@@ -29,7 +29,8 @@
 					"value": [
 						"a349c6b9cb36c4a5",
 						"cafec3afbf4f110f",
-						"cafee1f626f7b2e7"
+						"cafee1f626f7b2e7",
+						"cafe1d78fcd8f818"
 					],
 					"postInit": true
 				}
@@ -46,7 +47,8 @@
 					"value": [
 						"e078c5559d1c2596",
 						"cafe551b390255fb",
-						"cafe18f452e30f40"
+						"cafe18f452e30f40",
+						"cafed431128b6ccf"
 					],
 					"postInit": true
 				}
@@ -78,7 +80,8 @@
 					"value": [
 						"f51f5a1044ea9183",
 						"cafe365ea75ef8ac",
-						"cafed50fdacae2fa"
+						"cafed50fdacae2fa",
+						"cafe799efc690a2f"
 					]
 				}
 			}
@@ -192,6 +195,51 @@
 		"cafe18f452e30f40": {
 			"parent": "5a543e3c67e76632",
 			"name": "Var2",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "008CCB07DC9F5E26",
+						"flag": "9F"
+					}
+				}
+			}
+		},
+		"cafe799efc690a2f": {
+			"parent": "85468c828f887af0",
+			"name": "3",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/templates/snug/visitor.template?/outfit_visitor_agentsmith_m_v3.entitytemplate].pc_entitytemplate",
+						"flag": "9F"
+					}
+				}
+			}
+		},
+		"cafe1d78fcd8f818": {
+			"parent": "7696d1ac9bac70de",
+			"name": "Var3",
+			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00598DB156092396",
+						"flag": "9F"
+					}
+				}
+			}
+		},
+		"cafed431128b6ccf": {
+			"parent": "5a543e3c67e76632",
+			"name": "Var3",
 			"factory": "[modules:/zoutfitvariation.class].pc_entitytype",
 			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
 			"properties": {
