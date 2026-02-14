@@ -1738,7 +1738,7 @@
 					"type": "ZString",
 					"value": "Agent Smith"
 				},
-				"m_bStartEnabled": { "type": "bool", "value": false },
+				"m_bStartEnabled": { "type": "bool", "value": true },
 				"m_eGlowOverride": {
 					"type": "ERenderGlowTypes",
 					"value": "ERENDERGLOWTYPE_CONTRACT_TARGET_SPECIAL"
@@ -1800,12 +1800,14 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["cafeb220d8174652"]
 				},
-				"m_nBasePriority": { "type": "int32", "value": 10 },
 				"m_aHigherPriority": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": [],
+					"value": ["cafe3c9a49f22de8"],
 					"postInit": true
 				}
+			},
+			"inputCopying": {
+				"Welcome_Left": { "Welcome_Left": ["cafe3c9a49f22de8"] }
 			}
 		},
 		"cafe8d7e59db8150": {
@@ -1820,20 +1822,6 @@
 				}
 			},
 			"events": { "OnStart": { "Start": ["cafe89e58627584f"] } }
-		},
-		"cafea773eb7a641d": {
-			"parent": "cafe02a72e285f4c",
-			"name": "HM Close",
-			"factory": "[assembly:/_pro/design/logic.template?/distancetriggercharacter.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/distancetriggercharacter.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_fRadius": { "type": "float32", "value": 17.0 },
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafe5103cf8f7e2f",
-					"postInit": true
-				}
-			}
 		},
 		"cafe773b98770928": {
 			"parent": "cafe875005066f70",
@@ -8469,6 +8457,138 @@
 				}
 			},
 			"events": { "Out1": {}, "Out2": {} }
+		},
+		"cafe3c9a49f22de8": {
+			"parent": "cafe5103cf8f7e2f",
+			"name": "DR welcome",
+			"factory": "[assembly:/_pro/design/actor/dramasystem2.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/dramasystem2.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nCooldown": { "type": "float32", "value": 10 },
+				"m_aRoles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafea70963e8116c"],
+					"postInit": true
+				},
+				"m_aStartConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafea909cf04075b"],
+					"postInit": true
+				}
+			},
+			"events": {
+				"OnStart": {
+					"Welcome_Left": [
+						"cafe65d7a5444fba",
+						"cafe5d15ff928a4c",
+						"cafe948ea69195f8",
+						"cafeaf17b7127044",
+						"cafe213d17250801",
+						"cafebef295e02e36",
+						"cafeccce1de0413b",
+						"cafe724ce0e90688",
+						"cafe4775e555406b",
+						"cafe89e58627584f"
+					]
+				}
+			}
+		},
+		"cafea70963e8116c": {
+			"parent": "cafe3c9a49f22de8",
+			"name": "Role",
+			"factory": "[assembly:/_pro/design/actor/dramasystem2.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/dramasystem2.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rActorProvider": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe5103cf8f7e2f"
+				}
+			}
+		},
+		"cafe76f6112f27c4": {
+			"parent": "cafe3c9a49f22de8",
+			"name": "AOL_dr41820_altguardgreet",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/paris/3000_elusive/3700_frenchmartini/3700_story/dr3742_slotwayahead.sweetdialog?/dr3742_slotwayahead_agentsmith_et_001.sweetdialogitem].pc_dialogevent",
+						"flag": "5F"
+					}
+				},
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "cafea70963e8116c"
+				}
+			},
+			"events": { "Completed": { "Done": ["cafe0ca15d83b663"] } }
+		},
+		"cafe0ca15d83b663": {
+			"parent": "cafe3c9a49f22de8",
+			"name": "DramaSituationProxy",
+			"factory": "[assembly:/_pro/design/actor/dramasystem2.template?/dramasituationproxy.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/dramasystem2.template?/dramasituationproxy.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rOriginalDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe3c9a49f22de8"
+				}
+			},
+			"events": { "OnStart": { "Start": ["cafe76f6112f27c4"] } }
+		},
+		"cafea909cf04075b": {
+			"parent": "cafe5103cf8f7e2f",
+			"name": "EnableConditions",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafeaf2c8d372123"],
+					"postInit": true
+				}
+			}
+		},
+		"cafeaf2c8d372123": {
+			"parent": "cafea909cf04075b",
+			"name": "SpatialRangeCondition",
+			"factory": "[modules:/zspatialrangecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zspatialrangecondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rSpatial1": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "86ed890fa30fa1c7",
+						"externalScene": "[assembly:/_pro/scenes/missions/snug/mission_vanilla.brick].pc_entitytype"
+					}
+				},
+				"m_rSpatial2": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe5103cf8f7e2f"
+				},
+				"m_fDistance": { "type": "float32", "value": 3 }
+			}
+		},
+		"cafe18d8b7c25743": {
+			"parent": "cafea909cf04075b",
+			"name": "ActorCanSeeCondition",
+			"factory": "[modules:/zactorcanseecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zactorcanseecondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe5103cf8f7e2f"
+				},
+				"m_rEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "86ed890fa30fa1c7",
+						"externalScene": "[assembly:/_pro/scenes/missions/snug/mission_vanilla.brick].pc_entitytype"
+					}
+				}
+			}
 		}
 	},
 	"propertyOverrides": [],
